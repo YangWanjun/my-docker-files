@@ -6,7 +6,7 @@ if [[ ! -d /areaparking ]]; then
 
 fi
 
-cd /ebusiness
+cd /areaparking
 git pull
 
 python manage.py runserver 0.0.0.0:80
