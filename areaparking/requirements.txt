@@ -13,6 +13,6 @@ googlemaps==2.5.1
 ########## Windows上インストール時の注意事項 ##########
 # ■pycryptoインストール失敗の場合
 # ./areaparking/data/pycrypto-2.6.1-cp36-cp36m-win_amd64.whl をインストールしてください。
-# ■GDALをインストールする場合 Microsoft Visual C++ Build Toolsが必要です
+# ■GDALをインストールする場合
 # ./areaparking/data/GDAL-2.2.3-cp36-cp36m-win_amd64 をインストールしてください。
 #######################################################

@@ -5,7 +5,7 @@ WORKDIR /root
 
 ADD . /root
 
-RUN apk --no-cache add --update git make gcc g++ ca-certificates
+RUN apk --no-cache add --update git make gcc g++
 # pillowは以下のライブラリーが必要
 RUN apk --no-cache add zlib-dev jpeg-dev
 # django-pyodbc-azureは以下のライブラリーが必要
