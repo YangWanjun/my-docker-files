@@ -9,5 +9,5 @@ fi
 cd /areaparking
 git pull
 
-python manage.py migrate
-python manage.py runserver 0.0.0.0:80 --noreload
+#python manage.py migrate
+#python manage.py runserver 0.0.0.0:80 --noreload
