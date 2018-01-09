@@ -5,20 +5,17 @@ WORKDIR /root
 
 ADD . /root
 
-RUN apk --no-cache add --update git make gcc g++
+RUN apk --no-cache add --update git py-mysqldb mysql-dev make gcc g++ musl-dev
 # pillowは以下のライブラリーが必要
 RUN apk --no-cache add zlib-dev jpeg-dev
-# django-pyodbc-azureは以下のライブラリーが必要
-RUN apk add --no-cache unixodbc-dev freetds-dev
 # Geodjangoは以下のライブラリーが必要
-RUN apk add --no-cache gdal-dev --repository http://nl.alpinelinux.org/alpine/edge/testing
+RUN apk add --no-cache gdal-dev geos-dev --repository http://nl.alpinelinux.org/alpine/edge/testing
 
 RUN pip --no-cache-dir --trusted-host pypi.python.org install -r requirements.txt
 
-RUN echo "[FreeTDS]" >> /etc/odbcinst.ini && \
-    echo "Description = TDS Driver for MSSQL" >> /etc/odbcinst.ini && \
-    echo "driver = /usr/lib/libtdsodbc.so" >> /etc/odbcinst.ini && \
-    chmod +x /root/enterpoint.sh && \
+RUN chmod +x /root/enterpoint.sh && \
     rm -rf /var/cache/apk/*
+
+EXPOSE 80
 
 ENTRYPOINT ["/root/enterpoint.sh"]
