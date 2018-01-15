@@ -30,4 +30,6 @@ RUN sh /root/fix_errors.sh
 
 EXPOSE 80
 
+CMD Xvfb :99 -screen 0 1920x1200x24
+
 ENTRYPOINT ["/root/enterpoint.sh"]
