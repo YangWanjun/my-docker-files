@@ -22,13 +22,15 @@ RUN pip --no-cache-dir --trusted-host pypi.python.org install -r requirements.tx
 
 RUN chmod +x /root/enterpoint.sh && \
     chmod +x /root/fix_errors.sh && \
+    chmod +x /root/fix_font.sh && \
     chmod +x /root/wkhtmltopdf.sh && \
     apk del gcc musl-dev mysql-dev && \
     ln -s /root/wkhtmltopdf.sh /usr/local/bin/wkhtmltopdf && \
     rm -rf /var/cache/apk/*
 
 # エラー修正
-RUN sh /root/fix_errors.sh
+RUN sh /root/fix_errors.sh && \
+    sh /root/fix_font.sh
 
 ENV DISPLAY :99
 
