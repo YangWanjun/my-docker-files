@@ -5,7 +5,7 @@ WORKDIR /root
 
 ADD . /root
 
-RUN apk --no-cache add --update git py-mysqldb mysql-dev make gcc g++ musl-dev
+RUN apk --no-cache add --update git py-mysqldb mysql-dev make gcc g++ musl-dev p7zip
 # pillowは以下のライブラリーが必要
 RUN apk --no-cache add zlib-dev jpeg-dev
 # Geodjangoは以下のライブラリーが必要
