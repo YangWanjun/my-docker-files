@@ -11,9 +11,11 @@ RUN apk --no-cache add zlib-dev jpeg-dev
 # Geodjangoは以下のライブラリーが必要
 RUN apk --no-cache add gdal-dev geos-dev --repository http://nl.alpinelinux.org/alpine/edge/testing
 # wkhtmltopdf
+# mesa-dri-swrastは「libEGL warning: DRI2: failed to open swrast」の対策
 RUN apk --no-cache add xvfb ttf-freefont fontconfig dbus
 RUN apk add qt5-qtbase-dev \
             wkhtmltopdf \
+            mesa-dri-swrast \
             --no-cache \
             --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
             --allow-untrusted
