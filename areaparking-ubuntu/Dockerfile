@@ -22,7 +22,9 @@ RUN chmod +x /root/enterpoint.sh && \
 
 RUN sh /root/fix_errors_pyminizip.sh && \
     sh /root/fix_errors_geos.sh && \
-    sh /root/fix_font.sh
+    sh /root/fix_font.sh && \
+    rm libpng12-0_1.2.54-1ubuntu1_amd64.deb && \
+    rm wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
 
 EXPOSE 80
 
