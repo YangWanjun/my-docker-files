@@ -6,7 +6,7 @@ WORKDIR /root
 ADD . /root
 
 RUN apt-get update -y
-RUN apt-get install -y git python3.6 python3-pip libmysqlclient-dev zlib1g-dev python3-gdal
+RUN apt-get install -y git python3.6 python3-pip libmysqlclient-dev zlib1g-dev python3-gdal zip convmv
 # install wkhtmltopdf
 RUN apt-get install -y build-essential libssl-dev libxrender-dev gdebi
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install xorg
