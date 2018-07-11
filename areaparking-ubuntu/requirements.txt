@@ -13,4 +13,4 @@ googlemaps==2.5.1
 openpyxl==2.5.1
 GDAL==2.2.2
 requests==2.18.4
-mojimoji==0.0.8
+jaconv==0.2.3
