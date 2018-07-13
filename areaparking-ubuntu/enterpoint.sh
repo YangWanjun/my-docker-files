@@ -6,6 +6,11 @@ if [ ! -d /areaparking ]; then
 
 fi
 
+if [ ! -d /static ]; then
+  mkdir /static
+
+fi
+
 cd /areaparking
 git pull
 

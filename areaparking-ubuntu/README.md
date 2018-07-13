@@ -1,1 +1,1 @@
-docker run -d --name areaparking-ubuntu --link mysql:mysql -p 80:80 yangwanjun/areaparking-ubuntu
+docker run -d --name areaparking --link mysql:mysql --link appayment:appayment -v /home/ec2-user/work/areaparking/static:/static yangwanjun/areaparking-ubuntu 
