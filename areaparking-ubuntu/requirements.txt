@@ -14,3 +14,4 @@ openpyxl==2.5.1
 GDAL==2.2.2
 requests==2.18.4
 jaconv==0.2.3
+django-constrainedfilefield==3.2.0
