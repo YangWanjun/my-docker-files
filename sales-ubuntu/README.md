@@ -1,0 +1,1 @@
+docker run -d --name sales --link mysql:mysql -v /home/ec2-user/build/eb_sales_files:/eb_sales_files yangwanjun/sales
