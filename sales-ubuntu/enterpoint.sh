@@ -1,5 +1,5 @@
-#!/bin/sh
-if [[ ! -d /ebusiness ]]; then
+!/bin/bash
+if [ ! -d /ebusiness ]; then
   mkdir /ebusiness
   cd /ebusiness
   git clone https://github.com/ebusiness/ebusiness.git ./
@@ -12,15 +12,15 @@ git pull
 
 # settings
 
-if [[ ! -d log ]]; then
+if [ ! -d log ]; then
   mkdir log
 fi
 
-if [[ ! -d log/batch ]]; then
+if [ ! -d log/batch ]; then
   mkdir log/batch
 fi
 
 wkhtmltopdf https://www.google.co.jp /root/output.pdf
 
 nohup python batch.py &
-python manage.py runserver 0.0.0.0:80 --noreload
+python /ebusiness/manage.py runserver 0.0.0.0:80 --noreload
