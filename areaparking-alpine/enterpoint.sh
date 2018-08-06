@@ -2,7 +2,7 @@
 if [[ ! -d /areaparking ]]; then
   mkdir /areaparking
   cd /areaparking
-  git clone https://e-business.co.jp:3000/Areaparking/areaparking.git ./
+  git clone https://git.e-business.co.jp:3000/Areaparking/areaparking.git ./
 
 fi
 
