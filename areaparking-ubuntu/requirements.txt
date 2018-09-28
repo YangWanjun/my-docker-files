@@ -5,6 +5,8 @@ djangorestframework==3.6.4
 djangorestframework-gis==0.12
 django-filter==1.0.4
 django-cors-headers==2.1.0
+beautifulsoup4==4.6.3
+progressbar==2.5
 pillow==4.3
 xlrd==1.1.0
 pycrypto==2.6.1
@@ -15,3 +17,13 @@ GDAL==2.2.2
 requests==2.18.4
 jaconv==0.2.3
 django-constrainedfilefield==3.2.0
+########## Windows上インストール時の注意事項 ##########
+# ■pycryptoインストール失敗の場合
+# ./areaparking/data/pycrypto-2.6.1-cp36-cp36m-win_amd64.whl をインストールしてください。
+# ■GDALをインストールする場合
+# ./areaparking/data/GDAL-2.2.3-cp36-cp36m-win_amd64 をインストールしてください。
+#######################################################
+##########          Linuxの注意事項          ##########
+# ■django.contrib.gis.geos.error.GEOSException: Could not parse version info string "3.6.2-CAPI-1.10.2 4d2925d6"のエラー発生した場合
+# https://stackoverflow.com/questions/18643998/geodjango-geosexception-error#answer-18721622を参照して修正してください
+#######################################################
