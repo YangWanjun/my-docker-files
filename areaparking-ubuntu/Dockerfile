@@ -22,7 +22,6 @@ ENV LC_ALL ja_JP.UTF-8
 RUN pip3 --no-cache-dir --trusted-host pypi.python.org install -r requirements.txt
 
 RUN chmod +x /root/enterpoint.sh && \
-    chmod +x /root/fix_errors_pyminizip.sh && \
     chmod +x /root/fix_errors_geos.sh && \
     chmod +x /root/fix_font.sh
 
