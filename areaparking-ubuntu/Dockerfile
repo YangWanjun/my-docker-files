@@ -32,4 +32,4 @@ RUN sh /root/fix_errors_geos.sh && \
 
 EXPOSE 80
 
-ENTRYPOINT ["/root/enterpoint.sh"]
+# ENTRYPOINT ["/root/enterpoint.sh"]
