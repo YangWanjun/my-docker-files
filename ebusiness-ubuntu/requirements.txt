@@ -1,0 +1,10 @@
+django==2.1.4
+djangorestframework==3.9.0
+djangorestframework-jwt==1.11.0
+django-cors-headers==2.3.0
+django-filter==2.0.0
+mysqlclient==1.3.13
+########## Windows上インストール時の注意事項 ##########
+# ■mysqlclientインストール失敗の場合
+# ./ebusiness/data/mysqlclient-1.3.13-cp36-cp36m-win_amd64.whl をインストールしてください。
+#######################################################
