@@ -47,4 +47,4 @@ RUN sh /root/fix_error_matplotlib_display.sh && \
 
 EXPOSE 80
 
-ENTRYPOINT ["/root/enterpoint.sh"]
+# ENTRYPOINT ["/root/enterpoint.sh"]
