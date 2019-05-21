@@ -7,6 +7,11 @@ ADD . /root
 
 RUN apt-get update -y
 RUN apt-get install -y git python3.6 python3-pip libmysqlclient-dev zip convmv
+# install wkhtmltopdf
+RUN apt-get install -y build-essential libssl-dev libxrender-dev gdebi
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install xorg
+RUN gdebi --n libpng12-0_1.2.54-1ubuntu1_amd64.deb
+RUN gdebi --n wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
 # Locale
 RUN apt-get install -y language-pack-ja && \
     locale-gen ja_JP.UTF-8
@@ -18,6 +23,8 @@ RUN pip3 --no-cache-dir --trusted-host pypi.python.org install -r requirements.t
 
 RUN chmod +x /root/fix_font.sh
 
-# RUN sh /root/fix_font.sh
+RUN sh /root/fix_font.sh && \
+    rm libpng12-0_1.2.54-1ubuntu1_amd64.deb && \
+    rm wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
 
 EXPOSE 80
