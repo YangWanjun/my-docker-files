@@ -5,6 +5,8 @@ WORKDIR /root
 
 ADD . /root
 
+RUN apt-get update -y
+RUN apt-get install -y python3-gdal
 # pythonのライブラリー
 RUN pip3 --no-cache-dir --trusted-host pypi.python.org install -r requirements.txt
 

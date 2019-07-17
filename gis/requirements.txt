@@ -1,2 +1,4 @@
 ﻿django==2.2
 psycopg2==2.8.3
+djangorestframework==3.10.0
+pywatchman==1.4.1
