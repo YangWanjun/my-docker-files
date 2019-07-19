@@ -18,7 +18,4 @@ RUN chmod +x /root/start_resin.sh && \
     chmod +x /root/config_resin.sh
 RUN sh /root/start_resin.sh && \
     sh /root/config_resin.sh
-RUN rm -rf /root/resin-pro-4.0.61 && \
-    rm postgresql-42.2.6.jar && \
-    rm jdk-12.0.2_linux-x64_bin.deb && \
-    rm resin-pro-4.0.61.tar.gz
+RUN rm -rf /root/*
