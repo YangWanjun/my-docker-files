@@ -1,4 +1,6 @@
 ﻿django==2.2
 psycopg2==2.8.3
 djangorestframework==3.10.0
+djangorestframework-gis==0.14
+drf-extensions==0.5.0
 ipython==7.6.1
