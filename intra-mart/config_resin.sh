@@ -1,3 +1,4 @@
 #!/bin/bash
 
-cp /root/postgresql-42.2.6.jar /resin/lib/
+cp /root/lib/postgresql-42.2.6.jar /resin/lib/
+cp /root/lib/ojdbc6.jar /resin/lib/

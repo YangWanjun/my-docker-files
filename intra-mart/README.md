@@ -1,5 +1,5 @@
 # build
-docker build -t yangwanjun/intra-mart .
+docker build -t yangwanjun/intra-mart:jdk1.7.0_45 .
 # apache server
 docker run -d --name apache -p 8080:80 -p 443:443 -v /root/apache/httpd.conf:/usr/local/apache2/conf/httpd.conf httpd:alpine
 # run 
