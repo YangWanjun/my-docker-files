@@ -17,3 +17,5 @@ RUN chmod +x /root/install_resin.sh && \
 RUN sh /root/install_resin.sh && \
     sh /root/config_resin.sh
 RUN rm -rf /root/*
+
+# ENTRYPOINT ["/resin/bin/resinctl", "start"]
