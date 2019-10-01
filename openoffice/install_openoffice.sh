@@ -7,4 +7,4 @@ tar xvf openoffice.tar.gz
 # install
 cd ja/DEBS/
 dpkg -i *.deb
-update-alternatives --install /usr/bin/soffice soffice /opt/openoffice.org3/program/soffice 1
+# update-alternatives --install /usr/bin/soffice soffice /opt/openoffice.org3/program/soffice 1
