@@ -17,6 +17,9 @@ ENV LC_ALL ja_JP.UTF-8
 # Install openoffice
 RUN chmod +x /root/install_openoffice.sh
 RUN sh /root/install_openoffice.sh
+# IPA Fonts
+RUN chmod +x /root/fix_font.sh
+RUN sh /root/fix_font.sh
 
 RUN rm -rf /root/*
 
