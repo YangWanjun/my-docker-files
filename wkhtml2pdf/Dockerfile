@@ -27,4 +27,4 @@ RUN sh /root/fix_font.sh
 
 RUN rm -rf /root
 
-EXPOSE 80
+EXPOSE 5000
