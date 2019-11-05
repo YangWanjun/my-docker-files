@@ -6,7 +6,7 @@ WORKDIR /root
 ADD . /root
 
 RUN apt-get update -y
-RUN apt-get install -y git python3.7 python3-pip
+RUN apt-get install -y git python3.6 python3-pip
 # install wkhtmltopdf
 RUN apt-get install -y build-essential libssl-dev libxrender-dev gdebi
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install xorg
