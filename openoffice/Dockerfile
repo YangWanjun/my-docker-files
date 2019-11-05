@@ -21,7 +21,8 @@ RUN sh /root/install_openoffice.sh
 RUN chmod +x /root/fix_font.sh
 RUN sh /root/fix_font.sh
 
-RUN rm -rf /root/*
+RUN rm -rf /root/bin && \
+    rm -rf /root/IPAexfont00301
 
 EXPOSE 8100
 CMD /opt/openoffice4/program/soffice -headless -nofirststartwizard  -accept="socket,host=0.0.0.0,port=8100;urp;"
