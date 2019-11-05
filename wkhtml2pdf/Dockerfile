@@ -25,6 +25,10 @@ RUN chmod +x /root/fix_font.sh
 
 RUN sh /root/fix_font.sh
 
-RUN rm -rf /root
+RUN rm -rf /root/libpng12-0_1.2.54-1ubuntu1_amd64.deb && \
+    rm -rf /root/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb && \
+    rm -rf /root/IPAexfont00401 && \
+    rm -rf /root/requirements.txt && \
+    rm -rf /root/fix_font.sh
 
 EXPOSE 5000
