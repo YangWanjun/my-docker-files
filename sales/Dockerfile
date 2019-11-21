@@ -6,6 +6,8 @@ WORKDIR /root
 ADD . /root
 
 RUN apt-get update -y
+# zipファイル圧縮用
+RUN apt-get install -y zip convmv
 # Locale
 RUN apt-get install -y locales && \
     locale-gen ja_JP.UTF-8
