@@ -10,3 +10,4 @@ pytz==2019.3
 requests==2.22.0
 jaconv==0.2.4
 coreapi==2.3.3
+firebase-admin==4.0.0
