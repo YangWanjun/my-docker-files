@@ -18,12 +18,14 @@ RUN apt-get install -y language-pack-ja && \
 ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:ja
 ENV LC_ALL ja_JP.UTF-8
+
+# 文字化け解消のためGoogleフォント「Noto Sans CJK」を使用
+# RUN chmod +x /root/fix_font.sh
+# RUN sh /root/fix_font.sh
+RUN apt install -y fonts-noto-cjk-extra
+
 # pythonのライブラリー
 RUN pip3 --no-cache-dir --trusted-host pypi.org install -r requirements.txt
-
-RUN chmod +x /root/fix_font.sh
-
-RUN sh /root/fix_font.sh
 
 RUN rm -rf /root/libpng12-0_1.2.54-1ubuntu1_amd64.deb && \
     rm -rf /root/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb && \
