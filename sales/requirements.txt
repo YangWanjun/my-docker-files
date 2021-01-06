@@ -14,4 +14,4 @@ jaconv==0.2.4
 coreapi==2.3.3
 firebase-admin==4.0.0
 openpyxl==3.0.3
-sourcedefender==5.0.20
+sourcedefender==6.0.50
