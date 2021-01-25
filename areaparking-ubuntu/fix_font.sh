@@ -7,3 +7,4 @@ fi
 mv ~/IPAexfont00301 ~/.fonts/
 
 fc-cache -fv
+
