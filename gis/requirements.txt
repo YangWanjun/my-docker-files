@@ -1,12 +1,12 @@
-﻿django==2.2
-django-filter==2.2.0
-djangorestframework==3.10.0
-djangorestframework-gis==0.14
-django-cors-headers==3.0.2
-drf-extensions==0.5.0
-psycopg2==2.8.3
-mysqlclient==1.4.2
+﻿django==3.0.8
+django-filter==2.4.0
+djangorestframework==3.12.2
+djangorestframework-gis==0.17
+django-cors-headers==3.7.0
+drf-extensions==0.6.0
+psycopg2==2.8.6
+mysqlclient==2.0.3
 djongo==1.2.33
 # djongoを利用時、sqlparse==0.2.4が必要、最新の0.3.0だとエラーになる
 sqlparse==0.2.4
-ipython==7.6.1
+ipython==7.19.0

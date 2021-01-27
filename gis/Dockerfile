@@ -1,4 +1,4 @@
-FROM python:3.7.4
+FROM python:3.9.1
 LABEL maintainer="ywjsailor@gmail.com"
 
 WORKDIR /root
