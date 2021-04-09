@@ -12,7 +12,7 @@ xlrd==1.1.0
 pdfkit==0.6.1
 googlemaps==2.5.1
 openpyxl==2.5.1
-requests==2.18.4
+requests==2.20.0
 jaconv==0.2.3
 django-constrainedfilefield==3.2.0
 pycrypto==2.6.1
