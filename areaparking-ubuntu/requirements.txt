@@ -1,4 +1,4 @@
-﻿django==1.11.4
+﻿django==1.11.29
 django-material==1.1.1
 mysqlclient==1.3.12
 djangorestframework==3.6.4
