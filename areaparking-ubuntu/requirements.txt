@@ -7,7 +7,7 @@ django-filter==1.0.4
 django-cors-headers==2.1.0
 beautifulsoup4==4.6.3
 progressbar==2.5
-pillow==4.3
+pillow==8.1.1
 xlrd==1.1.0
 pdfkit==0.6.1
 googlemaps==2.5.1
