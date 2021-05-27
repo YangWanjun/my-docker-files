@@ -10,4 +10,5 @@ pytz==2019.3
 requests==2.25.1
 coreapi==2.3.3
 openpyxl==3.0.3
-sourcedefender==6.0.50
+sourcedefender==7.1.8
+firebase-admin==5.0.0
