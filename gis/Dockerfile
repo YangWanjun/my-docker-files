@@ -10,4 +10,4 @@ RUN apk add musl-dev gcc make g++ file postgresql-dev
 # pythonのライブラリー
 RUN pip3 --no-cache-dir --trusted-host pypi.python.org install -r requirements.txt
 
-EXPOSE 80
+EXPOSE 5000

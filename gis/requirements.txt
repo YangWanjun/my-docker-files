@@ -1,6 +1,6 @@
-﻿Flask==1.1.2
+﻿Flask==2.0.1
 Flask-Cors==3.0.10
 Flask-SQLAlchemy==2.5.1
-Flask-Migrate==2.7.0
-psycopg2==2.8.6
-ipython==7.21.0
+Flask-Migrate==3.0.1
+psycopg2==2.9.1
+ipython==7.25.0
