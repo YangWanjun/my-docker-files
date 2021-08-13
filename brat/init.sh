@@ -12,5 +12,6 @@ fi
 cd /opt/brat/external && ./mecab.sh
 cd /opt/brat && ./install_new.sh
 
-rm -rf /root/*
+# 下記 rm を実行したら、docker restart の時にファイルが見つからないので、エラーになる
+# rm -rf /root/brat-1.3_Crunchy_Frog
 python /opt/brat/standalone.py

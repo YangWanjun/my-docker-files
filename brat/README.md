@@ -7,3 +7,6 @@ docker build -t yangwanjun/brat .
 ```
 docker run -d --restart=always --name brat -p 8001:8001 -v D:\backup\brat_data:/opt/brat yangwanjun/brat
 ```
+
+ユーザー名:admin
+パスワード:admin
