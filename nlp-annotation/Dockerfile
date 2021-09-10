@@ -15,6 +15,18 @@ RUN tar xf mecab-0.996.tar.gz && \
     make && \
     make install
 
+RUN tar xf darts-0.32.tar.gz && \
+    cd darts-0.32 && \
+    ./configure && \
+    make && \
+    make install
+
+RUN tar xf chasen-2.4.5.tar.gz && \
+    cd chasen-2.4.5 && \
+    ./configure && \
+    make && \
+    make install
+
 # pythonのライブラリー
 RUN pip3 --no-cache-dir --trusted-host pypi.python.org install -r requirements.txt
 

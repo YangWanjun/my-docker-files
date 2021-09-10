@@ -1,5 +1,8 @@
 ﻿django==3.2.6
 django-filter==2.4.0
 mysqlclient==2.0.3
+nltk==3.6.2
 mecab-python3==1.0.4
 unidic-lite==1.0.8
+ginza==5.0.2
+ja_ginza==5.0.0
