@@ -6,11 +6,11 @@ WORKDIR /root
 ADD . /root
 
 RUN apk update
-RUN apk add git mariadb-dev gcc libc-dev
+RUN apk add --no-cache git mariadb-dev gcc libc-dev
 # for pillow
-RUN apk add jpeg-dev zlib-dev libjpeg
+RUN apk add --no-cache jpeg-dev zlib-dev libjpeg
 # for firebase-admin's denpendency `grpcio`
-RUN apk add build-base linux-headers
+RUN apk add --no-cache build-base linux-headers
 # pythonのライブラリー
 RUN pip3 --no-cache-dir --trusted-host pypi.python.org install -r requirements.txt
 
