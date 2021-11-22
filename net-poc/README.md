@@ -1,2 +1,2 @@
 ## build
-docker build -t yangwanjun/net-poc .
+docker build -t yangwanjun/net-poc:dev .

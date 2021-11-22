@@ -3,12 +3,10 @@ djangorestframework==3.12.4
 djangorestframework-simplejwt==4.7.2
 django-cors-headers==3.7.0
 django-filter==2.4.0
-# django-admin-sortable==2.2.4
 django-admin-sortable2==1.0.2
 django-redis==5.0.0
 django-crispy-forms==1.13.0
 drf-extensions==0.7.1
-mysqlclient==2.0.3
 psycopg2==2.9.1
 pillow==8.3.1
 pdf2image==1.16.0

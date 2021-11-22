@@ -6,11 +6,11 @@ WORKDIR /root
 ADD . /root
 
 RUN apk update
-RUN apk add git mariadb-dev gcc libc-dev postgresql-dev
+RUN apk add --no-cache gcc libc-dev postgresql-dev
 # for pillow
-RUN apk add jpeg-dev zlib-dev libjpeg
+RUN apk add --no-cache jpeg-dev zlib-dev libjpeg
 # for pdf2image
-RUN apk add poppler-utils poppler-data
+RUN apk add --no-cache poppler-utils poppler-data
 # pythonのライブラリー
 RUN pip3 --no-cache-dir --trusted-host pypi.python.org install -r requirements.txt
 
