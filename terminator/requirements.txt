@@ -9,3 +9,4 @@ MarkupSafe==2.1.1
 ipython==8.2.0
 flask-shell-ipython==0.4.1
 APScheduler==3.9.1
+requests==2.27.1
