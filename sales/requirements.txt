@@ -6,16 +6,18 @@ django-cors-headers==3.10.1
 django-filter==21.1
 django-autocomplete-light==3.8.2
 django-oauth-toolkit==1.5.0
-django-cas-ng==4.2.1
+# "1071, 'Specified key was too long; max key length is 3072 bytes'"の不具合があります
+# django_cas_ng/migrations/0002_auto_20201023_1400.pyのmax_lengthを512に変更してください。
+django-cas-ng==4.3.0
 django-redis==5.1.0
 gunicorn==20.1.0
 pillow==8.4.0
 mysqlclient==2.1.0
 pytz==2021.3
-requests==2.26.0
+requests==2.27.1
 jaconv==0.3
 coreapi==2.3.3
 firebase-admin==5.1.0
 openpyxl==3.0.9
 pycryptodome==3.10.1
-sourcedefender==7.1.61
+sourcedefender==10.0.3
