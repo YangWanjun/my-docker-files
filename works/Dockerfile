@@ -1,4 +1,4 @@
-FROM python:3.10.4-alpine3.15
+FROM python:3.10.6-alpine3.15
 LABEL maintainer="ywjsailor@gmail.com"
 
 WORKDIR /root
@@ -7,6 +7,8 @@ RUN apk update
 RUN apk add --no-cache git mariadb-dev gcc libc-dev
 # for pillow
 RUN apk add --no-cache jpeg-dev zlib-dev libjpeg
+# for pdf2image
+RUN apk add --no-cache poppler-utils poppler-data
 # for firebase-admin's denpendency `grpcio`
 RUN apk add --no-cache build-base linux-headers
 # for install grpcio takes forever while installing firebase-admin, Don't use grpcio==1.44.0
