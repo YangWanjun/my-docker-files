@@ -5,6 +5,7 @@ drf-extensions==0.7.1
 django-cors-headers==3.13.0
 django-filter==22.1
 django-cas-ng==4.3.0
+django-cleanup==6.0.0
 gunicorn==20.1.0
 pillow==9.2.0
 mysqlclient==2.1.1
