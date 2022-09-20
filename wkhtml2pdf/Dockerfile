@@ -3,7 +3,8 @@ LABEL maintainer="ywjsailor@gmail.com"
 
 WORKDIR /root
 
-ADD . /root
+ADD ./libpng12-0_1.2.54-1ubuntu1_amd64.deb /root
+ADD ./wkhtmltox-0.12.2.1_linux-trusty-amd64.deb /root
 
 RUN apt-get update -y
 RUN apt-get install -y git python3.6 python3-pip
@@ -25,12 +26,16 @@ ENV LC_ALL ja_JP.UTF-8
 RUN apt install -y fonts-noto-cjk-extra
 
 # pythonのライブラリー
+ADD ./requirements.txt /root
 RUN pip3 --no-cache-dir --trusted-host pypi.org install -r requirements.txt
 
 RUN rm -rf /root/libpng12-0_1.2.54-1ubuntu1_amd64.deb && \
     rm -rf /root/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb && \
-    rm -rf /root/IPAexfont00401 && \
-    rm -rf /root/requirements.txt && \
-    rm -rf /root/fix_font.sh
+    # rm -rf /root/IPAexfont00401 && \
+    # rm -rf /root/fix_font.sh && \
+    rm -rf /root/requirements.txt
 
 EXPOSE 5000
+
+COPY ./Sourcecode /opt/project
+CMD [ "python3", "/opt/project/app.py" ]

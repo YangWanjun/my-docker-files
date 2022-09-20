@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>HTML to PDF</h3>
+<form method="post" action="/">
+    <table style="width: 100%;">
+        <tr>
+            <th style="width: 100px;"><label for="id_name">ファイル名</label></th>
+            <td><input name="name" id="id_name" type="text" value="text.pdf"/></td>
+        </tr>
+        <tr>
+            <th><label for="id_content">内容</label></th>
+            <td>
+                <textarea name="content" id="id_content" style="width: 100%; height: 200px;"><html><body>pdf test こんにちは</body></html></textarea>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="変換" />
+</form>
+{% endblock %}
