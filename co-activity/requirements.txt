@@ -2,3 +2,4 @@ django==4.1.4
 djangorestframework==3.14.0
 drf-extensions==0.7.1
 mysqlclient==2.1.1
+pycryptodome==3.16.0
