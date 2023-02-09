@@ -1,9 +1,11 @@
-FROM python:3.10.6
+FROM python:3.11.2-slim
 LABEL maintainer="ywjsailor@gmail.com"
 
 WORKDIR /root
 
 RUN apt-get update -y
+# for mysqlclient
+RUN apt-get install -y gcc libmariadb-dev
 # zipファイル圧縮用
 RUN apt-get install -y zip convmv
 # Locale
