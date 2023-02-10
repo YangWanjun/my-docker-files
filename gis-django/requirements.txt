@@ -9,4 +9,4 @@ mysqlclient==2.0.3
 djongo==1.2.33
 # djongoを利用時、sqlparse==0.2.4が必要、最新の0.3.0だとエラーになる
 sqlparse==0.2.4
-ipython==7.19.0
+ipython==8.10.0
