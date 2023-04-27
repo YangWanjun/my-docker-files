@@ -1,4 +1,4 @@
-FROM python:3.10.9-alpine3.17
+FROM python:3.11.3-alpine
 LABEL maintainer="ywjsailor@gmail.com"
 
 WORKDIR /root
@@ -11,9 +11,5 @@ RUN apk add --no-cache jpeg-dev zlib-dev libjpeg
 # pythonのライブラリー
 ADD ./requirements.txt /root
 RUN pip3 --no-cache-dir --trusted-host pypi.python.org install -r requirements.txt
-
-RUN rm -f /root/Dockerfile && \
-    rm -f /root/README.md && \
-    rm -f /root/requirements.txt
 
 EXPOSE 80

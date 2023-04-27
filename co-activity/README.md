@@ -1,2 +1,2 @@
 ## build
-docker build -t yangwanjun/activities:py3.10.9-dj4.1.4 .
+docker build -t yangwanjun/activities:py3.11.3-dj4.2 .
