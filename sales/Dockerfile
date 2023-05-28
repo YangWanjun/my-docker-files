@@ -19,6 +19,8 @@ RUN localedef -f UTF-8 -i ja_JP ja_JP.UTF-8
 ADD ./requirements.txt /root
 RUN pip3 --no-cache-dir --trusted-host pypi.python.org install -r requirements.txt
 
+ADD ./01.patch.sh /root
+RUN sh /root/01.patch.sh
 RUN rm -rf /root
 
 EXPOSE 80
