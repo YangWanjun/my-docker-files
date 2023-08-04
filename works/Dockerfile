@@ -15,14 +15,12 @@ RUN apk add --no-cache build-base linux-headers
 # https://www.wheelodex.org/projects/grpcio/
 RUN pip install grpcio==1.45.0
 
-ADD . /root
 # pythonのライブラリー
+ADD ./requirements.txt /root
 RUN pip3 --no-cache-dir --trusted-host pypi.python.org install -r requirements.txt
-RUN sh /root/01.patch.sh
 
-RUN rm -f /root/Dockerfile && \
-    rm -f /root/README.md && \
-    rm -f /root/requirements.txt && \
-    rm -f /root/01.patch.sh
+ADD ./01.patch.sh /root
+RUN sh /root/01.patch.sh
+RUN rm -rf /root
 
 EXPOSE 80
