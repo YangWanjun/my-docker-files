@@ -7,7 +7,6 @@ django-filter==22.1
 django-autocomplete-light==3.9.4
 django-oauth-toolkit==2.2.0
 django-concurrency==2.4
-django-mdeditor==0.1.20
 # "1071, 'Specified key was too long; max key length is 3072 bytes'"の不具合があります
 # django_cas_ng/migrations/0002_auto_20201023_1400.pyのmax_lengthを512に変更してください。
 django-cas-ng==4.3.0
@@ -23,3 +22,4 @@ firebase-admin==6.1.0
 openpyxl==3.1.0
 pycryptodome==3.17
 bcrypt==4.0.1
+pyyaml==6.0
